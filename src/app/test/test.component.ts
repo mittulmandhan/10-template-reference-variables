@@ -12,4 +12,8 @@ export class TestComponent implements OnInit {
   ngOnInit() {
   }
 
+  logMessage(value) {
+    console.log(value);
+  }
+
 }

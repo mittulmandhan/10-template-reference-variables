@@ -1,1 +1,11 @@
-<p>test works!</p>
+<h2>
+    Input your name here:
+</h2>
+<!--#refVar is the declaration of the reference variable named refVar which is pointing to the following input element-->
+<input #refVar type="text">
+
+<br/>
+<!-- In this button refVar is used to get the value input by user and show it in console -->
+<button (click)="logMessage(refVar.value)">Log</button>
+<!-- In this button refVar is used to get the entire element and show it in console -->
+<button (click)="logMessage(refVar)">get element</button>
